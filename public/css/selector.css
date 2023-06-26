@@ -1,0 +1,115 @@
+:root {
+  background: plum;
+}
+
+html {
+  max-width: 1000px;
+  background: blue;
+}
+
+body {
+  margin: 32px;
+  background: #fff;
+}
+
+main,
+header,
+footer,
+nav {
+  margin: 32px;
+}
+
+section {
+  padding: 16px;
+}
+
+.box {
+  background: #9a5757;
+}
+#user, .user {
+  color: blue;
+}
+h1, h2#user, button {
+  color: green;
+}
+.button {
+  background: gray;
+}
+div > p {
+  color: rgb(18, 15, 78);
+}
+footer > .user {
+  color: rgb(94, 5, 35);
+}
+footer em {
+  color: yellow;
+}
+
+.p-top {
+  background: brown;
+}
+h1 + p {
+  background: black;
+}
+
+
+.card-dark {
+  background: #8e8181;
+}
+.item {
+  color: green; 
+}
+.item:last-child {
+  color: blue;
+}
+.input-dark {
+  background: #645e5e;
+}
+.input-dark[required] {
+  background: #922222;
+}
+.input-dark[type="number"] {
+  background: #03b485;
+}
+.small-img[alt~="small"] {
+  height: 400px;
+}
+button[class|="btn"] {
+  background: rgb(100, 96, 99);
+}
+a[class*="btn"] {
+  background: rgb(159, 35, 35);
+}
+.btn::first-letter {
+  color: aqua;
+}
+.big-text::first-line {
+  color: pink;
+}
+.input-dark::placeholder {
+  color: green;
+}
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  background: green;
+}
+/* ================== */
+#test:target {
+  color: red;
+}
+.link:link{
+  color: red;
+}
+.link:hover{
+  color: green;
+}
+.link:active{
+  color: purple;
+}
+input {
+  background: grey;
+}
+input:focus {
+  background-color: red;
+}
