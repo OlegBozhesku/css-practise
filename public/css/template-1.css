@@ -8,6 +8,7 @@
 }
 .header {
     padding: 24px;
+    border-bottom: 1px solid #DEE2E6;
 }
 .logo {
     font-size: 17px;
@@ -47,6 +48,7 @@
 }
 .footer {
     padding: 24px 0;
+    border-top: 1px solid #DEE2E6;
 }
 .footer_copyright {
     font-size: 14px;
@@ -66,6 +68,8 @@
     font-weight: 500;
     margin-bottom: 12px;
     text-align: center;
+    
+    line-height: 80px;
 }
 .hero_text {
     color: #212529;
@@ -93,6 +97,8 @@
 .card_price_duration {
     font-size: 29px;
     color: #6C757D;
+
+    vertical-align: 30%;
 }
 .card_block {
     margin-bottom: 24px;
@@ -114,4 +120,17 @@
     width: 100%;
     font-size: 19px;
     padding: 9px;
+}
+.card {
+    border: 2px solid blue;
+    border-radius: 15px 50px;
+}
+.card:hover {
+    outline: 2px solid yellow;
+    outline-offset: 5px;
+
+    cursor: all-scroll;
+}
+h1 {
+    text-shadow: 2px 2px 2px red;
 }
