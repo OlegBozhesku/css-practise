@@ -1,3 +1,7 @@
+:root {
+    --text-color: #212529;
+    --space-medium: 24px
+}
 .page {
     background: #FFFFFF;
     padding: 0 15px;
@@ -29,6 +33,8 @@
 .nav_link:hover {
     text-decoration: underline;
     color: blue;
+
+    opacity: 40%;
 }
 .nav_vertical>.nav_link {
     display: block;
@@ -58,13 +64,13 @@
 }
 .footer_title {
     font-size: 20px ;
-    color: #212529;
+    color: var(--text-color, #212529);
     display: block;
     margin-bottom: 12px;
 }
 .hero_title {
     font-size: 56px;
-    color: #212529;
+    color: var(--text-color, #212529);
     font-weight: 500;
     margin-bottom: 12px;
     text-align: center;
@@ -72,11 +78,13 @@
     line-height: 80px;
 }
 .hero_text {
-    color: #212529;
+    color: var(--text-color, #212529);
     font-size: 20px;
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+
+    /* height: 500px; */
 }
 .plans_card:not(:last-of-type) {
     margin-right: 24px;
@@ -85,14 +93,14 @@
     padding: 12px;
     text-align: center;
     font-size: 24px;
-    color: #212529;
+    color: var(--text-color, #212529);
 }
 .card-body {
     padding: 24px;
 }
 .card_price_amount {
     font-size: 40px;
-    color: #212529;
+    color: var(--text-color, #212529);
 }
 .card_price_duration {
     font-size: 29px;
@@ -109,7 +117,7 @@
 }
 .card_description_item {
     font-size: 16px;
-    color: #212529;
+    color: var(--text-color, #212529);
     display: block;
 }
 .card_description_item:not(:last-of-type) {
@@ -130,7 +138,68 @@
     outline-offset: 5px;
 
     cursor: all-scroll;
+    opacity: 0.6;
 }
 h1 {
     text-shadow: 2px 2px 2px red;
+}
+.hero_text {
+    padding: 40px;
+    color: green;
+    border-image-source: url('/img/test2.jpg');
+    border-image-width: 50%;
+}
+.page {
+    /* background-image: url('/img/test2.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.card_block {
+    list-style-type: circle;
+    padding: 0;
+    list-style-position: inside;
+    list-style-image: linear-gradient(
+        to bottom right, blue, yellow
+    );
+}
+.card_description_item {
+    display: list-item;
+}
+/* .table tr {
+    border: 1px solid #6C757D;
+} */
+.table tr td {
+    border: 1px solid #19578c;
+    border-bottom-color: red;
+    border-right-color: purple;
+}
+.table {
+    table-layout: fixed;
+    width: 600px;
+    border-collapse: unset;
+    border-spacing: 20px 10px;
+    caption-side: top;
+    empty-cells: hide;
+}
+.nav_link::before,
+.nav_link::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('/img/test2.jpg');
+}
+.nav_link::before {
+    margin-right: 20px;
+}
+.nav_link::after {
+    margin-left: 20px;
+}
+.calc {
+    width: 600px;
+
+    margin: 0;
+    margin-left: calc(50% - (600px / 2));
 }
