@@ -234,3 +234,24 @@
 .link_item:hover {
     text-decoration: underline;
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 900px;
+    align-content: space-between;
+    border: 1px solid red;
+    /* align-items: stretch; */
+}
+.flex-item {
+    width: 300px;
+    margin: 15px;
+}
+.flex-item:first-of-type {
+    height: 100px;
+}
+.flex-item:last-of-type {
+    height: 300px;
+}
