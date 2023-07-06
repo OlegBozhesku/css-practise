@@ -1,11 +1,11 @@
 <div class='page'>
   <div class='page_content'>
     <header class="page_block">
-      <div class='header row'>
-        <div class="col-3">
+      <div class='header'>
+        <div class="">
           {{>logo}}
         </div>
-        <nav class='header_nav col-9'>
+        <nav class='header_nav'>
           <div class="header_nav_right">{{>nav_test list=header}}</div>
         </nav>
       </div>
@@ -31,11 +31,9 @@
         <div class="row g-0">
           <div class="col-12">
             <div class="list_header">
-              <div class="row">
-                <div class="col-6">
+              <div>
                   <h2 class="list_title">List of posts</h2>
                 </div>
-                <div class="col-6">
                   <div class="category_list">
                     {{#each categories}}
                     <button class="category_button">{{text}}</button>
@@ -45,6 +43,7 @@
               </div>
             </div>
           </div>
+          <div class="row">
           <div class="col-7">
             <div class="list">
               {{#each news}}
@@ -72,13 +71,13 @@
 
 
     <footer class="page_block">
-      <div class="row g-0 footer">
-        <div class="col-3">
+      <div class="footer">
+        <div>
           {{>logo}}
           <span class="footer_copyright">Copyright 2023-2024 </span>
         </div>
         {{#each footer}}
-        <div class="col-3">
+        <div>
           <span class="footer_title">{{title}}</span>
           {{>nav_test list=links isVertical=true}}
         </div>
@@ -86,4 +85,3 @@
       </div>
     </footer>
   </div>
-</div>
