@@ -162,11 +162,18 @@
 }
 .msg {
   display: flex;
-  flex-direction: column;
   gap: 12px; 
+  padding-right: var(--space-b);
+}
+.msg_test {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   padding-bottom: var(--space-m);
   border-bottom: 1px solid var(--color-border);
-  padding-right: var(--space-b);
+}
+.msg_svg {
+  display: flex;
 }
 .messages_title {
   font-size: var(--size-b);
@@ -189,10 +196,13 @@
 svg {
   width: 32px;
   height: 32px;
-  float: left;
+  background: #007BFF;
 }
 
 .expirience_badge {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
  transform: rotate(30deg);
  color: var(--color-white);
  border-radius: 70px;
@@ -201,42 +211,48 @@ svg {
  height: 53px;
  font-size: 24px;
  font-weight: 700;
- line-height: 120%;
- padding: 12px 24px;
- position: absolute;
- top: 1200px;
- right: 230px;
+line-height: 120%;
+padding: 12px 24px;
+position: absolute;
+top: -30px;
+right: -30px;
 }
-
 .expirience {
   display: flex;
   flex-direction: column;
   background: #F8F9FA;
   padding: 24px 28px;
-  gap: 24px
+  gap: 24px;
+  position: relative;
 }
 .expirience_title {
-  color: var(--color-title);
+  /* color: var(--color-title); */
   font-size: 42px;
   font-weight: var(--weight-title);
   line-height: 120%;
 }
+.expirience_div {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-d);
+  gap: 8px;
+  padding: 16px;
+  background: var(--color-title);
+  color: var(--color-white);
+}
 .expirience_list {
   display: flex;
-  flex-direction: row;
   padding: 16px;
-  gap: 8px;
-  background: var(--color-title);
+  gap: 24px;
   border-radius: var(--border-radius-d);
 }
-.expirience_list > strong {
-  color: var(--color-white);
+.expirience_div > strong {
   font-size: 20px;
   font-weight: var(--weight-title);
   line-height: 26px;
 }
-.expirience_list > p {
-  color: #B1B1B1;
+.expirience_div > p {
+  /* color: #B1B1B1; */
   font-size: var(--size-d);
   font-weight: var(--weight_text);
   line-height: 22px;
