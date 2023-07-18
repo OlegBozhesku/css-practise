@@ -226,7 +226,6 @@ right: -30px;
   position: relative;
 }
 .expirience_title {
-  /* color: var(--color-title); */
   font-size: 42px;
   font-weight: var(--weight-title);
   line-height: 120%;
@@ -252,7 +251,6 @@ right: -30px;
   line-height: 26px;
 }
 .expirience_div > p {
-  /* color: #B1B1B1; */
   font-size: var(--size-d);
   font-weight: var(--weight_text);
   line-height: 22px;
