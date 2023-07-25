@@ -1,0 +1,18 @@
+{{#with data}}
+  <div class='featured_card'>
+    <div class='featured_isnew'>
+      {{#if isNew}}
+        <div class='featured_badge'>NEW</div>
+      {{/if}}
+      <div
+        id='{{id}}'
+        class='featured_image'
+        style='background-image: url({{photo}});'
+      >
+      </div>
+    </div>
+    <h2 class='featured_title'>{{name}}</h2>
+    <p class='featured_text'>{{description}}</p>
+    <a href='#' class='button featured_button'>Read All</a>
+  </div>
+{{/with}}
