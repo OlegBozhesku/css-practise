@@ -3761,6 +3761,48 @@ router.get('/template-3', function (req, res) {
 
     blog: [
       {
+        title: 'Popular post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Latest post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Featured story',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Latest post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Featured story',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
+        title: 'Popular post',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        button: 'View details',
+        href: 'https://example.com/',
+        img: 'https://picsum.photos/140/140',
+      },
+      {
         title: 'Latest post',
         text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
         button: 'View details',
