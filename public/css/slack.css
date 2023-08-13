@@ -66,6 +66,7 @@
     height: 14px;
     width: 24px;
     background-image: url('/svg/arrow-blue.svg');
+    margin-top: auto;
   }
 
   .page_section_home {
