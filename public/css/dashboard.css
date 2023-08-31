@@ -239,7 +239,7 @@ body {
     padding: var(--spacing-5);
     background-color: var(--color-white);
     border-radius: var(--spacing-3);
-    /* grid-template-columns: 1fr; */
+    height: fit-content;
   }
   .hr__line {
     border: 1px solid;
@@ -379,11 +379,23 @@ body {
     .page--dashboard {
       grid-template-columns: 1fr;
     }
+    .analytic__block {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .main__double {
+      grid-template-columns: 1fr;
+    }
     .aside {
       display: none;
     }
     .header {
       display: none;
+    }
+  }
+  @media all and (width <= 600px) {
+    .analytic__block {
+      display: block;
     }
   }
 }
