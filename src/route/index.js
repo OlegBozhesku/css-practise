@@ -58,11 +58,33 @@ router.get('/slack', function (req, res) {
 // ==============================
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/slack_copy', function (req, res) {
+router.get('/dashboard-copy', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('slack_copy', {
+  res.render('dashboard-copy', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+// ==============================
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard-copy1', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashboard-copy1', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+// ==============================
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashboard', {
     layout: null,
   })
   //                  ↑↑ сюди вводимо JSON дані
